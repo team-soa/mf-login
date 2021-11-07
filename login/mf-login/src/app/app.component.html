@@ -1,1 +1,61 @@
-Hola, soy el login
+<div class="fondo">
+
+  <div  class="container">
+    <div class="row">
+      <img src='logo.png'>
+    </div>
+    <div class="row">
+      <form>
+        <div class="row">
+          <input type="email" name="email" class="kinput-main" id="InputEmail1" placeholder="Usuario"
+            aria-label="CorreoElectronico" required="">
+        </div>
+        <div class="row ">
+          <input type="password" name="password" class="kinput-main" id="InputPassword" placeholder="Contraseña"
+            aria-label="contraseña" required="" >
+        </div>
+        <div class="row">
+          <button class="btn kbtn-primary" type="submit">Aceptar</button>
+        </div>
+      </form>
+    </div>
+    <div class="row">
+      <label type="button" class="btn kbtn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">Crear
+        Cuenta</label>
+    </div>
+  </div>
+</div>
+
+<div class="modal kmodal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content kmodal-content">
+      <div class="modal-header ">
+        <h4 class="modal-title" id="exampleModalLabel">Bienvenido</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <p>Ingresa tus datos para que puedas ser registrado.</p>
+          <form>
+            <div class="row">
+              <input type="email" name="email" class="kinput-primary" id="CrearCuentaEmail" placeholder="Usuario"
+                aria-label="CorreoElectronico" required="">
+            </div>
+            <div class="row ">
+              <input type="password" name="password" class="kinput-primary" id="CrearCuentaPassword"
+                placeholder="Contraseña" aria-label="contraseña" required="">
+            </div>
+            <label class="klabel" for="myForm">Tipo de usuario:</label>
+            <select class="form-select kselect" id="myForm" ng-init="value = premium" aria-label="Default select example"  name="hourMode">
+              <option class="kselect"  value="premium" selected >Premium</option>
+              <option class="kselect" value="user">Standard</option>
+            </select>
+          </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn kbtn-primary" type="submit" data-bs-dismiss="modal">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</div>
