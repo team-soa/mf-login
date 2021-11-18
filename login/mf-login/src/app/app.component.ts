@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
   usuario: User = new User();
   usuarioNuevo: User = new User();
 
-  constructor(private router: Router, private service: LoginService,  private cookieService: CookieService) {}
+  constructor(private router: Router, private service: LoginService, private cookieService: CookieService) {}
 
   ngOnInit(): void {
   }

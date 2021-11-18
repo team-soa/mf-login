@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { EmptyRouteComponent } from './empty-route/empty-route.component';
 import {FormsModule} from "@angular/forms";
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import {CookieService} from "ngx-cookie-service";
+import { CookieService } from 'ngx-cookie-service';
 
 
 @NgModule({
