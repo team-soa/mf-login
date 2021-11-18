@@ -17,6 +17,6 @@ export class LoginService {
 
   // tslint:disable-next-line:ban-types
   public registraUsuario(user: User): Observable<Object>{
-    return this.http.post(this.URL , user);
+    return this.http.post(this.URL+ '/register' , user);
   }
 }
