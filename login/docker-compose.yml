@@ -1,7 +1,7 @@
 version: '3.4'
 
 services:
-  mfwikipedia:
+  mflogin:
     image: mflogin
     build:
       context: mf-login
