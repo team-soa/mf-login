@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  mfwikipedia:
+    image: mflogin
+    build:
+      context: mf-login
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 4206:4206
