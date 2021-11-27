@@ -7,7 +7,7 @@ import {Observable} from 'rxjs';
   providedIn: 'root'
 })
 export class LoginService {
-  URL = 'http://20.94.148.107:4002/users';
+  URL = 'http://20.189.30.101:4002/users';
   constructor(private http: HttpClient) { }
 
   // tslint:disable-next-line:ban-types
